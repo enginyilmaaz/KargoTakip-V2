@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63FEFF17-A88D-4F0E-8B21-BE96B1B64939}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>Kargo Takip Otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Engin\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3B78FE8E4D488A5AC636B5C021897C6078263B36</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Kargo Takip Otomasyonu_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db\adresIslem.cs" />
+    <Compile Include="db\kargoIslemleri.cs" />
+    <Compile Include="db\musteriIslemleri.cs" />
+    <Compile Include="db\subeIslem.cs" />
+    <Compile Include="db\dbislem.cs" />
+    <Compile Include="db\ucretIslem.cs" />
+    <Compile Include="DesiHesapla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesiHesapla.Designer.cs">
+      <DependentUpon>DesiHesapla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="durumEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="durumEkrani.Designer.cs">
+      <DependentUpon>durumEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="durumGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="durumGuncelle.Designer.cs">
+      <DependentUpon>durumGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yetkiEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yetkiEkrani.Designer.cs">
+      <DependentUpon>yetkiEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gonderiGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gonderiGuncelle.Designer.cs">
+      <DependentUpon>gonderiGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gonderiYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gonderiYap.Designer.cs">
+      <DependentUpon>gonderiYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucretEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucretEkle.Designer.cs">
+      <DependentUpon>ucretEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subeEkle.Designer.cs">
+      <DependentUpon>subeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db\uyeIslemleri.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sistemYoneticisiEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sistemYoneticisiEkrani.Designer.cs">
+      <DependentUpon>sistemYoneticisiEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="girisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisEkrani.Designer.cs">
+      <DependentUpon>girisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremiUnuttum.Designer.cs">
+      <DependentUpon>sifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subeGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subeGuncelle.Designer.cs">
+      <DependentUpon>subeGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subeEkrani.Designer.cs">
+      <DependentUpon>subeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucretGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucrettEkle.Designer.cs">
+      <DependentUpon>ucretGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yetkiGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yetkiGuncelle.Designer.cs">
+      <DependentUpon>yetkiGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yetkiliEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yetkiliEkle.Designer.cs">
+      <DependentUpon>yetkiliEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yetkiliGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yetkiliGuncelle.Designer.cs">
+      <DependentUpon>yetkiliGuncelle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DesiHesapla.resx">
+      <DependentUpon>DesiHesapla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="durumEkrani.resx">
+      <DependentUpon>durumEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="durumGuncelle.resx">
+      <DependentUpon>durumGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yetkiEkrani.resx">
+      <DependentUpon>yetkiEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gonderiGuncelle.resx">
+      <DependentUpon>gonderiGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gonderiYap.resx">
+      <DependentUpon>gonderiYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucretEkle.resx">
+      <DependentUpon>ucretEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifremiUnuttum.resx">
+      <DependentUpon>sifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sistemYoneticisiEkrani.resx">
+      <DependentUpon>sistemYoneticisiEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisEkrani.resx">
+      <DependentUpon>girisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subeEkle.resx">
+      <DependentUpon>subeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subeGuncelle.resx">
+      <DependentUpon>subeGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subeEkrani.resx">
+      <DependentUpon>subeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yetkiGuncelle.resx">
+      <DependentUpon>yetkiGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yetkiliEkle.resx">
+      <DependentUpon>yetkiliEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yetkiliGuncelle.resx">
+      <DependentUpon>yetkiliGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Kargo Takip Otomasyonu_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1456506709_Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1456781248_sign-info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1457294380_success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1457295516_15_Tick_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1457295576_tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1457310252_onebit_34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1458439104_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1458439203_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1458441336_opened_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1459296516_Untitled-2-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\travel_agency-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\branche-add-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1459297874_group_full_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1459312700_05.Tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\1459312956_Iconfinder_0016_71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460067198_box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price-tag-mark-add-plus-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag_add-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-1075_analytics_report-32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
